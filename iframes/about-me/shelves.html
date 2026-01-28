@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <body>
+       <div id="container">
+<!--music-->
+           <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/en/b/b3/Shaken_CS.jpg" class="music zoom">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/00/Hozier_-_Wasteland%2C_Baby%21.png" class="music zoom">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Clairo_-_Charm.png" class="music zoom">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a8/Songs_%28Adrianne_Lenker%29.png" class="music zoom">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/de/Steve_Lacy_-_Gemini_Rights.png" class="music zoom">
+            <img src="https://i.scdn.co/image/ab67616d0000b273f9db1116c79cf67eb1903b16" class="music zoom">
+           </div>
+            <div class="shelf"></div>
+
+<!--games-->
+           <div class="box">
+            <img src="https://m.media-amazon.com/images/I/81OSkSH-qgL._AC_UF1000,1000_QL80_.jpg" class="music zoom">
+            <img src="https://i.ebayimg.com/images/g/RJgAAOSwwy9lB-te/s-l1200.jpg" class="music zoom">
+            <img src="https://gamefaqs.gamespot.com/a/box/2/4/4/859244_front.jpg" class="music zoom">
+            <img src="https://e.snmc.io/lk/l/x/953271e244c8d1e118ba719566c65570/12616335" class="music zoom">
+            <img src="https://i.redd.it/i-found-the-hd-blank-cover-art-used-for-the-x-box-360-v0-1xtzcn8fshga1.png?width=1280&format=png&auto=webp&s=dabc2602deecd755627bae2c081c0874281ddef3" class="music zoom">
+            <img src="https://cdn.mobygames.com/covers/17111253-the-legend-of-zelda-tears-of-the-kingdom-nintendo-switch-front-c.jpg" class="music zoom">
+            <img src="https://cdn.mobygames.com/covers/8264053-undertale-windows-apps-front-cover.png" class="music zoom">
+           </div>
+            <div class="shelf"></div>
+
+<!--some third thing-->
+           <div class="box">
+                <img src="https://leizy8499.neocities.org/collections/figurines/bigman.png" class="music zoom">
+                <img src="https://leizy8499.neocities.org/collections/figurines/pearl.png" class="music zoom">
+                <img src="https://leizy8499.neocities.org/collections/figurines/marina.png" class="music zoom">
+                <img src="https://leizy8499.neocities.org/collections/figurines/link.png" class="music zoom">
+                <img src="https://leizy8499.neocities.org/collections/figurines/zelda.png" class="music zoom">
+                <img src="https://cdn.wikimg.net/en/splatoonwiki/images/4/49/S3_amiibo_Callie_%28Alterna%29.png" class="music zoom">
+                <img src="https://cdn.wikimg.net/en/splatoonwiki/images/6/68/S3_amiibo_Marie_%28Alterna%29.png" class="music zoom">
+           </div>
+            <div class="shelf"></div>
+       </div>
+    </body>
+
+
+<style>
+     @font-face{
+        font-family:xbox360;
+        src:url(/fonts/X360.ttf);
+    }
+
+    @font-face{
+        font-family: convection;
+        src:url(/fonts/Conv.ttf);
+    }
+
+    #container{
+        display: grid;
+        overflow: auto;
+    }
+
+    main{
+        grid-area: main;
+        padding: 20px;
+        font-family: convection;
+            color: lightgrey;
+    }
+
+    .scrollbar-hide{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .shelf{
+        width: 100%;
+        background: linear-gradient(to bottom, white, lightgrey, white);
+        height: 20px;
+        border-radius: 10px;
+        position: relative;
+            bottom: 10px;
+    }
+
+    .zoom{transition: transform .2s;}
+    .zoom:hover{transform: scale(.9);}
+
+    .music{
+        height: 150px;
+        margin-left: 15px;
+    }
+
+    .box{
+        overflow-x: auto;
+        width: 840px;
+        height: 170px;
+        white-space: nowrap;
+    }
+</style>
+    </html>

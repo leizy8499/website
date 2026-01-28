@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <body>
+        <h1>leizy8499</h1>
+            <h2 style="margin-top: -20px; color: white;">4000 G</h2>
+
+                <div class="achievements">
+                    <img src="https://leizy8499.neocities.org/buttons/achievements/n1.gif" class="soom">
+                    <img src="https://leizy8499.neocities.org/buttons/achievements/2.gif" class="soom">
+                    <img src="https://leizy8499.neocities.org/buttons/achievements/3.gif" class="soom">
+                    <img src="https://leizy8499.neocities.org/buttons/achievements/4.gif" class="soom" width="46px;">
+                    <img src="https://leizy8499.neocities.org/buttons/achievements/5.gif" class="soom" width="46px;">
+                    <img src="https://leizy8499.neocities.org/buttons/achievements/6.gif" class="soom" width="46px;">
+                    <img src="https://leizy8499.neocities.org/buttons/achievements/7.gif" class="soom" width="46px;">
+                    <img src="https://leizy8499.neocities.org/buttons/achievements/8.gif" class="soom" width="46px;">
+                    <img src="https://leizy8499.neocities.org/buttons/achievements/n9.gif" class="soom" width="46px;">
+                </div>
+
+            <img src="https://leizy8499.neocities.org/gifs/avatar.psd.png" style="height: 470px; position: relative; bottom: 90px; float: left;">
+            <div id="status">
+                <div id="statuscafe"><div id="statuscafe-username" style="font-size: 12px; margin-top: -10px; color: black"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=leizy8499" defer></script>
+            </div>
+    </body>
+
+
+<style>
+     @font-face{
+        font-family:xbox360;
+        src:url(/fonts/X360.ttf);
+    }
+
+    @font-face{
+        font-family: convection;
+        src:url(/fonts/Conv.ttf);
+    }
+
+    body{
+        font-family: convection;
+    }
+
+    main{
+        grid-area: main;
+        margin-top: 60px;
+        padding: 20px;
+        font-family: convection;
+            color: lightgrey;
+    }
+        .achievements{
+            display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 3px;
+                grid-template-areas:
+                    '1 2 3'
+                    '4 5 6'
+                    '7 8 9';
+            max-width: 150px;
+            height: 150px;
+            border: px solid grey;
+            float: left;
+        }
+
+        #status{
+            border: 1px solid lightgrey;
+                border-radius: 5px;
+            width: 250px;
+            background: white;
+            min-height: 100px;
+            float: left;
+            position: relative;
+                bottom: 70px;
+            padding: 10px;
+            color: grey;
+                font-family:convection;
+            align-self: baseline;
+        }
+            #status::before{
+                content: "";
+                position: relative;
+                    top: 100px;
+                left: -30px;
+                border-top: 30px solid white;
+                border-left: 30px solid transparent;
+                border-right: 0px solid black;
+                background: linear-gradient(to bottom, lightgrey, white);
+            }
+
+        a{color: lightgrey;
+            text-decoration: none;}
+        a:hover{font-weight: 600;}
+
+    .zoom{transition: transform .2s;}
+    .zoom:hover{transform: scale(1.1);
+                box-shadow: 1px 5px 10px darkgreen;
+                background: linear-gradient(to bottom right, lightgrey, #38a338, #228d22, green);}
+
+    .soom{transition: transform .2s;}
+    .soom:hover{transform: scale(1.1);}
+
+    h1{font-weight: 100; color: white;}
+
+    .scrollbar-hide{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+</style>
+    </html>

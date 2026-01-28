@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>leith's minidex</title>
+        <link rel="icon" href="https://pixels.crd.co/assets/images/gallery50/88a7b8ba.gif?v=29416114"/>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="header">
+                <pre>
+  ,,           ,,          ,,
+`7MM           db   mm   `7MM            ,M"""b.
+  MM                MM     MM            89'  `Mg
+  MM  .gP"Ya `7MM mmMMmm   MMpMMMb.           ,M9
+  MM ,M'   Yb  MM   MM     MM    MM        mMMY'
+  MM 8M""""""  MM   MM     MM    MM        MM
+  MM YM.    ,  MM   MM     MM    MM  ,, ,, ,,
+.JMML.`Mbmmd'.JMML. `Mbmo.JMML  JMML.db db db
+                </pre>
+            </div>
+
+        <div class="nav">
+            <a href="/mini/minidex.html"><button>home</button></a>
+            <a href="/mini/about.html"><button>about</button></a>
+            <a href="/mini/journal.html"><button>journal</button></a>
+            <a href="/mini/reviews.html"><button>reviews</button></a>
+            <a href="/index.html"><button>exit</button></a>
+            <hr>
+        </div>
+
+        <main>
+            <div class="review" style="height: 205px;">
+                <img src="https://a.ltrbxd.com/resized/film-poster/1/1/1/6/6/0/0/1116600-sinners-2025-0-1000-0-1500-crop.jpg?v=5996b7d555" class="media">
+                <text>
+                    <p style="margin-bottom: 0;">Sinners</p>
+                    <p>★★★☆☆ <small>as of 1/8/2026</small></p>
+                    <p>i'm not entirely sure how to feel about this movie. i thought there were a lot of feel-good moments in this film -- a lot to reflect on, as well -- but overall the pacing of the story was a bit confusing for me. i also felt that all the talk about sex was a bit cheap. i think i would have liked it a bit more if there was a bit more explanation given throughout the film than what there was, but maybe that's just me.</p>
+                    <p>i also understand that this movie is probably simply not targeted at me, which is fine as well -- it just wasn't my personal cup of tea ^_^</p>
+                </text>
+            </div>
+
+            <div class="review" style="height: 205px;">
+                <img src="https://m.media-amazon.com/images/I/81KRVTdKcsL._AC_UF894,1000_QL80_.jpg" class="media">
+                <text>
+                    <p style="margin-bottom: 0;">Alicization <small>(Sword Art Online: Season 3 Part 1)</small></p>
+                    <p>★★★★☆</p>
+                    <p>watching kirito interact with brand-new characters outside of the same range he's had for the past couple arcs was so nice. one star off simply because of the lack of asuna throughout the whole season (I am biased, I will admit).</p>
+                    <p>this is the best season to come out of SAO. period. I actually found myself enjoying Alicization even more than the first arc or Mother's Rosario (my goats). The fact the story felt complete within itself and had a very limited magic function was nice. I thought it brought out the charm of the first arc very well, while being able to keep the mystery and true spirit of SAO alive.</p>
+                </text>
+            </div>
+
+        </main>
+
+        </div>
+    </body>
+
+
+<style>
+/*page specific CSS*/
+
+    .review{
+        height: auto;
+            width: 620px;
+        border-bottom: 1px dashed white;
+        padding: 10px;
+    }
+
+    .media:hover{
+        filter: grayscale(0%);
+    }
+
+    .media{
+        border: 1px solid white;
+        height: 200px;
+        float: left;
+        border-radius: 15px;
+        filter: grayscale(95%)
+    }
+
+    text{
+        float: left;
+        padding: 10px;
+        width: 70%;
+    }
+
+    p{margin-top: 0px;}
+
+/*general css*/
+    body{
+        background: linear-gradient(to right, #17221E, #000300, transparent), url(https://leizy8499.neocities.org/backgrounds/excalibur.png);
+            background-color: #000300;
+            background-position: top right;
+            background-attachment: fixed;
+            background-size: contain;
+        overflow: hidden;
+        height: auto;
+        color: white;
+    }
+
+    #header{
+        border: 0px solid white;
+        height: 110px;
+        color: white;
+        grid-area: header;
+    }
+
+    #container{
+        display: grid;
+            grid-template-areas: 'header' 'nav' 'content';
+            grid-template-columns: 1fr;
+            grid-template-rows: 130px 40px 1fr;
+
+        border: 0px solid white;
+        margin: 130px 170px;
+            height: 700px;
+            width: 650px;
+    }
+
+    .nav{
+        grid-area: nav;
+    }
+
+    main{
+        grid-area: content;
+        font-size: 14px;
+        margin-left:5px;
+        text-indent: px;
+    }
+
+    pre{font-size: 10px;}
+    hr{color: white; margin-left: 0; width: 300px;}
+
+    button{
+        margin-right: 10px;
+        background: transparent;
+        color: white;
+        border: 0px;
+        font-family: serif;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    button:hover{
+        font-style: oblique;
+    }
+
+    a{color: white;}
+    a:hover{text-decoration-style: dotted;}
+    small{color: grey; font-style: italic;}
+    li::marker{content:"⤷  ";}
+    li{margin-bottom: 10px;}
+    ul{margin-left: -25px;}
+</style>
+</html>

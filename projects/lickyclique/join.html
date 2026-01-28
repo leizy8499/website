@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>join the licky clique! ~ leizy8499</title>
+        <link rel="icon" href="https://leizy8499.neocities.org/favicons/lickyfavicon.png"/>
+    </head>
+
+    <body>
+        <div id="sidebar">
+            <a href="/projects/lickyclique/about.html">about</a><br>
+            <a href="/projects/lickyclique/members.html">members</a><br>
+            <a href="/projects/lickyclique/join.html">join</a><br>
+        </div>
+
+        <div id="container">
+
+            <div id="header">
+                <h2 style="font-size: 12px; margin-bottom: -10px;">the</h2>
+                <h2>licky</h2>
+                <h2>clique(y)</h2>
+            </div>
+
+
+            <main>
+                <h2 style="font-size: 20px; text-align: right; margin: 0px; margin-bottom: 20px;">how to join?</h2>
+                <p>Well, you've come to the right place! To join the Licky Clique, you must first make a licky. Unfortunately, this is not a drag-and-drop process; you must color in each frame to create a licky. However, there are only nine frames!</p>
+                <a href="https://www.pixilart.com/draw/cat-lick-base-6086b76909cf07f">Clicking this text will take you to the licky maker.</a>
+                <p>After creating your licky, please email me or post the link on my site profile! I will update the members page accordingly, and I will get back to you to let you know when you're added! Please put your licky with your cliques/clubs/webrings so that this project may grow.</p>
+
+                <h2 style="font-size: 20px; text-align: right; margin: 0px; margin-bottom: 20px;">rules / guidelines</h2>
+                <p>No hateful images</p>
+                <p>No blank lickies</p>
+                <p>Pre-made lickies are fine! Please just give me the link to the original creator so credit can be posted along with your name.</p>
+            </main>
+
+            <footer>hosted on neocities since 2023 || <a href="/homepage.html">to main site</a></footer>
+
+
+
+        </div>
+    </body>
+
+    <style>
+        @font-face{
+            font-family: Daydream;
+            src: url(/fonts/Daydream.ttf)
+            }
+        @font-face{
+            font-family:IBM;
+            src:url(/fonts/Web437_IBM_Model3x_Alt2.woff);
+            }
+
+
+        body{
+            background-image: url(https://leizy8499.neocities.org/backgrounds/box-bg.png);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows:150px 600px;
+            grid-template-areas:'blank container 3'
+                                 'blank container sidebar';
+        }
+
+        #sidebar{
+            border: 0px dotted black;
+            grid-area: sidebar;
+            width: 200px;
+            font-size: 32px;
+            font-family: daydream;
+        }
+
+        #container{
+            display: grid;
+                grid-template-rows:150px 1fr 30px;
+                grid-template-areas:'header'
+                                    'main'
+                                    'footer';
+            border: 1px solid black;
+            margin: 150px auto;
+            width: 600px;
+            height: 600px;
+            background: white;
+            grid-area:container;
+            border-radius: 15px;
+            font-family: IBM;
+            line-height: 100%;
+        }
+
+        #header{
+            grid-area: header;
+            border-bottom: 1px solid black;
+                border-top-right-radius: 14px;
+                border-top-left-radius: 14px;
+            background: linear-gradient(to right, white, transparent, transparent), url(https://i.pinimg.com/736x/9d/4a/24/9d4a24b3dec5965dcb92c6a8eecc65af.jpg);
+                background-size: 45%;
+                background-repeat: no-repeat;
+                background-position: right;
+        }
+
+        main{
+            grid-area: main;
+            padding: 20px;
+            line-height: 100%;
+        }
+
+        footer{
+            grid-area: footer;
+            padding: 7px;
+            border-top: 1px solid black;
+                border-bottom-right-radius: 14px;
+                border-bottom-left-radius: 14px;
+            text-align: right;
+            background: #60350a;
+            line-height: 100%;
+        }
+
+        a{color: black; text-decoration: none;}
+        a:hover{color:#60350a;}
+        h2{font-family: daydream; font-size: 36px; margin-left: 20px;}
+    </style>
+</html>

@@ -1,0 +1,30 @@
+.header{
+    background-color: greenyellow;
+        filter: grayscale(80%);
+    padding: 10px;
+    position:sticky;
+
+        font-size: 18px;
+        font-style: italic;
+}
+
+html{
+    font-family: monospace;
+    color: black;
+    padding: 5px;
+}
+a{color: black;}
+a:hover{
+    color: black;
+    text-decoration-style: dotted;
+}
+
+small{
+    font-size: 10px;
+}
+
+ol{list-style-image: url(https://static.tumblr.com/sqpojvq/eKnltqnt0/19.gif);}
+
+p{
+    font-family: monospace;
+}

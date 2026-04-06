@@ -32,14 +32,15 @@
                 <li><a href="https://status.cafe/">status.cafe</a> // status updates for your website</li>
                 <li><a href="http://www.mabsland.com/Adoption.html">Mabland's Rating Pandas</a> // add a rating to your website, G - NR status</li>
                 <li><a href="https://tamanotchi.world/">tomaNOTchi world</a> // interactive tomagotchi that is fed by site viewers</li>
-                <li><a href="https://gifypet.neocities.org/">gifypet</a> // fully customizable pet that can be fed, showred, etc.</li>
+                <li><a href="https://gifypet.neocities.org/">gifypet</a> // fully customizable pet that can be fed, showered, etc.</li>
                 <li><a href="https://www.imood.com/dashboard">imood</a> // mood tracker, displays on website like status.cafe</li>
+                <li><a href="https://glen-docs.gitlab.io/player/02/">glenthemes audioplayer</a> // the audioplayer on this page & other awesome things!</li>
             </ol>
 
                 <small>templates :]</small>
             <ol>
                 <li><a href="https://catboo.neocities.org/firstchild/">catboo</a> // MY GOOD FRIEND ELLY MADE THIS GO USE IT IT'S AWESOME!!!</li>
-                <li><a href="https://zhongvie.neocities.org/templates/">zhonvie</a> // aid's GORGEOUS templates.. all able to do dark/light themes...</li>
+                <li><a href="https://zhongvie.neocities.org/templates/">zhongvie</a> // aid's GORGEOUS templates.. all able to do dark/light themes...</li>
                 <li><a href="https://layouts.angelnetcast.com/">angelnetcast</a> // as a long-time angelnetcast lover you must see these</li>
                 <li><a href="https://www.itinerae.org/2024/01/foryou.html">itinerae.org</a> // thirty plus, easy to use templates ^_^ </li>
                 <li><a href="https://ribo.zone/free/layouts/">ribo.zone</a> // beautiful and diverse!</li>
@@ -96,22 +97,77 @@
                     <a href="https://bondiaries.neocities.org" target="_blank"><img src="https://leizy8499.neocities.org/buttons/NEIGHBORHOOD/bondiaries2.png"></a>
                     <a href="https://garfriend.neocities.org" target="_blank"><img src="https://leizy8499.neocities.org/buttons/NEIGHBORHOOD/garfriend-button.gif"></a>
                     <a href="https://zonaplankton.net" target="_blank"><img src="https://zonaplankton.net/buttons/zonabutton.gif"></a>
-                    <a href="https://lydels.neocities.org/" target="_blank"><img src="https://lydels.neocities.org/imagenes/index/lydelsbutton.gif" alt="lydel's button"></a>
                     <a href="https://moonflower.nekoweb.org/" target="_blank"><img src="https://moonflower.nekoweb.org/button.png" alt="moonflower"></a>
                 </ol>
-
-                <center><audio controls autoplay loop style="width: 170px; height: 30px; margin-top: 5px;">
-                <source src="https://archive.org/download/wii-sports-soundtrack-flac/Wii%20Sports%20OST%20%282006%29/29%20Golf%20%28Game%20Results%29.mp3" type="audio/mpeg">
-                </audio></center>
 </main>
-                </div>
-
+            </div>
 
             <footer>
                 hosted on neocities since 2023 || ↗ <a href="https://neocities.org/site/leizy8499" style="color: white;">profile</a>
             </footer>
-
         </div>
+            <!---+++  MUSIC PLAYER #02 by @glenthemes  +++--->
+<!----++   glen-docs.gitlab.io/player/02   ++---->
+<link href="//glen-players.gitlab.io/02/setup.css" rel="stylesheet">
+<script src="//glen-players.gitlab.io/02/init.js"></script>
+
+<!-- music player options list -->
+<style element="glenplayer02">
+[glenplayer02]{
+
+    /* general options */
+    --MusicPlayer-Position:"bottom left";
+    --MusicPlayer-Corner-Offset:1rem;
+    --MusicPlayer-FadeIn-Speed:0.25s;
+    --MusicPlayer-Gap-1:-50px;
+    --MusicPlayer-Gap-2:-1px;
+    z-index:25; /* increase this number if you can't see or click your music player */
+
+    /* player buttons */
+    --MusicPlayer-Buttons-Style:"outline"; /* "outline" or "fill" */
+    --MusicPlayer-Buttons-Size:0.86rem;
+    --MusicPlayer-Buttons-Color:#9972a6;
+    --MusicPlayer-Buttons-Padding:6px;
+
+    /* musical note icon */
+    --MusicPlayer-Decoration-Icon-Size:0;
+    --MusicPlayer-Decoration-Icon-Color:#9972a6;
+
+    /* song name */
+    --MusicPlayer-Song-Name-Font:"Readex Pro";
+    --MusicPlayer-Song-Name-Font-Size:0.75rem;
+    --MusicPlayer-Song-Name-Color:#9972a6;
+
+    /* (optional) if you have multiple players */
+    --MusicPlayer-Multiple-Players-Spacing:10px;
+    --MusicPlayer-Multiple-Players-Autoplay-Next:"no";
+    --MusicPlayer-Multiple-Players-Loop-List:"no";
+
+}/* don't delete this bracket */
+</style><!--don't delete this line-->
+
+<!-- music player starts here -->
+<div glenplayer02 style="margin-left: -60px;">
+    <!--- player buttons --->
+    <button play-button aria-label="Play"></button>
+    <button pause-button aria-label="Pause"></button>
+
+    <!--- decoration icon --->
+    <!--- aa-line-icons.gitlab.io/i/icons-list --->
+    <i class="aa-line-icons" icon-name="music-2"></i>
+
+    <!--- song name --->
+    <figcaption song-name uppercase="no">
+        maomao's daily life... - apothecary diaries
+    </figcaption>
+
+    <!--- song file URL --->
+    <!--- PLEASE READ: linktr.ee/direct_file_links --->
+    <audio src="https://archive.org/download/the-apothecary-diaries-season-1-ost/1-10%20Maomao%27s%20Daily%20Life.mp3" volume="100%" autoplay loop></audio>
+</div><!--don't delete this line-->
+
+<!------- END MUSIC PLAYER ------->
+
     </body>
 
 
@@ -129,34 +185,23 @@
 
     body{
         font-family: monospace;
-        background-image: url(https://i.pinimg.com/736x/b4/a9/d9/b4a9d9e35cf4519519046ced9b872dde.jpg);
+        background: url(https://i.pinimg.com/736x/82/a8/b9/82a8b99e96126dd7c74c866170ffc531.jpg);
             background-attachment: fixed;
             background-position: bottom right;
             background-repeat: no-repeat;
+            background-size:30%;
     }
 
     #container{
         max-width: 700px;
         margin:0 auto;
             margin-top: 50px;
-        border:1px solid #495a75;
+        border:1px solid #aa91b2;
             border-radius: 11px;
         filter: grayscale(0%);
         font-size: 15px;
     }
 
-    #header{
-        width: 100%;
-        height:170px;
-        background-image:linear-gradient(to bottom,  white, #34beed, white);
-        border-bottom: 1px solid;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
-
-    #flex{
-        display: flex;
-    }
 
     aside{
         background-color: white;
@@ -188,7 +233,7 @@
 
     footer{
         padding: 10px;
-        background-color: #495a75;
+        background-color: #aa91b2;
             color:white;
             font-family:;
             text-align: right;
@@ -228,14 +273,14 @@
     }
 
     a{
-        color: #495a75;
+        color: #9972a6;
         text-decoration: none;}
 
         a:hover{
-            color: #495a75;
+            color: #9972a6;
             text-decoration: underline dashed;}
     a:visited{
-        color: #495a75;
+        color: #9972a6;
         text-decoration-style: dashed;
     }
 
@@ -243,7 +288,7 @@
     h3{font-weight: 300;}
     ol{list-style-image:url(https://leizy8499.neocities.org/favicons/musicnote.gif);
         font-family: IBM;}
-    hr{border: 1px dashed #495a75;}
+    hr{border: 1px dashed #aa91b2;}
     small{font-family: IBM; line-height: 100%;}
 
     button{

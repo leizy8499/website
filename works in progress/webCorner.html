@@ -1,0 +1,425 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>leith's site</title>
+        <link rel="icon" href="https://leizy8499.neocities.org/favicons/applecar.gif"/>
+
+        <link rel="stylesheet" href="https://lydels.neocities.org/musicianswebring/onionring.css">
+    </head>
+    
+    <div id="container">
+
+<div class="webmaster" style="grid-area: webmaster;">
+<div class="header" style="width: 580px;"><h3 class="h3Alt">webmaster's corner!</h3></div>
+<div class="content">
+    <a href="https://plasma.nekoweb.org/" target="_blank"><img src="https://leizy8499.neocities.org/buttons/NEIGHBORHOOD/plasmaribbon.png" style="position: relative; bottom: 315px; z-index: 1; transform: rotate(25deg)"></a>
+    <div class="profile">
+        
+        <img src="https://i.pinimg.com/736x/32/13/1f/32131fea1f3f80f1239db67c0f118f87.jpg" 
+            style="height: 120px; border-radius: 0%; float: left; border: 1px dashed lightgrey; margin: 5px;">
+        <p style="background: #d2c672; margin: 6px; text-align: right; padding: 6px; font-weight: 600; letter-spacing: 1px">about me</p>
+            <p>i'm leith! <br>aged nineteen, i'm from the states and pretty cool :)</p>
+            <a href="/about-me.html" style="text-decoration-style: dashed">learn more</a> →
+        <p style="background: #d2c672; margin-top: 5px; margin-bottom: 0px; text-align: right; padding: 6px; font-weight: 600; letter-spacing: 1px;">about this place ^_^</p>
+            <p>this is my attempt at web design! i've had leizy8499.neocities.org for almost 3 years!</p>
+            <p>thank you for visiting my home :)</p>
+    </div>
+    
+    <div class="souvenir">
+        <div class="header" style="border-top-left-radius: 0px; border: transparent; background: white; font-family: ibm;">ദ്ദി  ˊ ᗜ ˋ )  -☆ hotlinking allowed!</div>
+            <div style="padding: 10px; height: 75px;">
+                    <textarea style="float: right; height: 60px; width: 160px; background: #f0f0f0; border: 1px dashed grey;"><a href="https://leizy8499.neocities.org/" target="_blank"><img src="https://leizy8499.neocities.org/buttons/LEIZY8499.jpeg"></a>
+                    </textarea>
+                <img src="https://leizy8499.neocities.org/buttons/LEIZY8499.jpeg"><br>
+                <img src="https://leizy8499.neocities.org/buttons/greenteeth.png">
+            </div>
+    </div>
+    
+    <div class="web2" style="grid-area: web2; background: #f0f0f0; border: 1px dotted grey; text-align: center;">
+        <div class="header" style="border-top-left-radius: 0px; border: transparent; background: white; font-family: ibm; text-align: left;">currently consuming...</div>
+            <div style="padding: 2px">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Sword_Art_Online_DVD_1_cover.jpg/250px-Sword_Art_Online_DVD_1_cover.jpg" class="media">
+                <img src="https://m.media-amazon.com/images/I/817nGTgaEBL._AC_UF894,1000_QL80_.jpg" class="media">
+                <img src="https://images.sr.roku.com/idType/roku/context/global/id/d214c07f35565dc287c58780df32b380/images/gracenote/assets/p185016_b_v12_ar.jpg/magic/396x0/filters:quality(70)" class="media">
+                <img src="https://m.media-amazon.com/images/I/61KSi8OvgVL._AC_UF1000,1000_QL80_.jpg" class="media"> 
+            </div>
+    </div>
+    
+    <div class="status">
+            <div id="statuscafe" style="padding:3px;">
+                <div id="statuscafe-username" style="font-size:14px; margin-bottom: 5px;"></div>
+                <div id="statuscafe-content"></div></div>
+            <script src="https://status.cafe/current-status.js?name=leizy8499" defer></script>
+        </div>
+    
+     <div class="listening">
+          <div class="header" style="border-top-left-radius: 0px; border: transparent; background: white; font-family: ibm;"><section id="listen">CANT FETCH last listened to</section></div>
+        <a href="" id="artworklink" target="_blank" style="display: block;"><img id="artwork" src="" style="float: left; margin-right: 10px; padding: 15px;"></a>
+        <p id="track" direction="left" style="font-size: 15px;"></p>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              var user = "leizy8499"
+              var url = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=+leizy8499+&api_key=afc213709a996ae561e307f596c9952b&format=json";
+              var request = new XMLHttpRequest();
+              request.open('GET', url, true);
+
+              request.onload = function() {
+                if (request.status >= 200 && request.status < 400) {
+
+                  var data = JSON.parse(request.responseText);
+                  var artist = data.recenttracks.track[0].artist["#text"];
+                  var song = data.recenttracks.track[0]["name"];
+                  var artwork = data.recenttracks.track[0].image[1]["#text"];
+                  var link = data.recenttracks.track[0]["url"];
+
+                  var artworkImg = document.getElementById("artwork");
+                  artworkImg.setAttribute("src", artwork);
+
+                  var trackInfo = document.getElementById("track");
+                  trackInfo.innerHTML = "\
+                    <strong>"+song+"</strong><br />\
+                    "+artist+"\
+                  ";
+
+                  var artworkLink = document.getElementById("artworklink");
+                  artworkLink.setAttribute("href", link);
+
+                  if (typeof data.recenttracks.track[0]["@attr"] !== "undefined"){
+                    var listenInfo = document.getElementById("listen");
+                    listenInfo.innerHTML = 'leith is <span style="color: #d2c672;">listening</span> to:';
+                  } else {
+                    var listenInfo = document.getElementById("listen");
+                    listenInfo.innerHTML = ' leith was <span>listening</span> to:';
+                    console.log("false");
+                  }
+                } else {
+                  console.error("last.fm server error!");
+                }
+              };
+
+              request.onerror = function() {
+                console.error("connection error!");
+              };
+
+              request.send();
+            });
+        </script>
+    </div>
+
+    
+</div>
+    </div>
+        
+<!--
+<div class="webmaster" style="grid-area: webmaster">
+    <div class="header"><h3 class="h3Alt">webmaster's corner!</h3></div>
+<div class="box" style="height: 400px; background-image: url(https://leizy8499.neocities.org/backgrounds/DSbackground.jpg); margin-bottom: 20px;">
+        <div class="box" style="width:255px; height: 275px; float: left; background: white; border: 1px dotted gray; filter: drop-shadow(0px 0px 5px gray); padding: 0px;">
+            <iframe src="/iframes/webramble.html" style="width: 100%; height: 100%; border: transparent; float: left;"></iframe>
+        </div>
+
+        <div class="box" style="width: 240px; height: 120px; float: right; background: white; border: 1px dotted gray; filter: drop-shadow(0px 0px 5px lightgray); margin-bottom: 10px;">
+            <div class="box" style="width: 105px; height: 105px; float: right; margin-bottom: 0px; padding: 0px; border: 1px solid #b8311d; line-height: 100%"><img src="https://leizy8499.neocities.org/kinlist/link.jpg" style="width: 105px;"></div>
+                <small style="font-family: monospace; line-height: 100%">~<b>leith, webmaster</b>~</small><br>
+                <small style="line-height: 100%">i'm 19, live in the US, and am actually really busy despite how many hours i put into this website.</small>
+                <a href="/about-me.html" style="float: right;"><small>about me >></small></a>
+
+        </div>
+
+        <div class="status" style="">
+            <div id="statuscafe" style="padding:3px;">
+                <div id="statuscafe-username" style="font-size:14px; margin-bottom: 5px;"></div>
+                <div id="statuscafe-content"></div></div>
+            <script src="https://status.cafe/current-status.js?name=leizy8499" defer></script>
+        </div>
+
+    <div class="box" style="width: 260px; height: 120px; float: right; margin-top: 10px; padding: 0px; font-family: monospace; font-size: 14px; border: 1px dotted gray; background: #f0f0f0;">
+          <div class="header" style="border-top-left-radius: 0px; border: transparent; background: white; font-family: ibm;"><section id="listen">CANT FETCH last listened to</section></div>
+        <a href="" id="artworklink" target="_blank" style="display: block;"><img id="artwork" src="" style="float: left; margin-right: 10px; padding: 10px;"></a>
+        <p id="track" direction="left" style="color: black;"></p>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              var user = "leizy8499"
+              var url = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=+leizy8499+&api_key=afc213709a996ae561e307f596c9952b&format=json";
+              var request = new XMLHttpRequest();
+              request.open('GET', url, true);
+
+              request.onload = function() {
+                if (request.status >= 200 && request.status < 400) {
+
+                  var data = JSON.parse(request.responseText);
+                  var artist = data.recenttracks.track[0].artist["#text"];
+                  var song = data.recenttracks.track[0]["name"];
+                  var artwork = data.recenttracks.track[0].image[1]["#text"];
+                  var link = data.recenttracks.track[0]["url"];
+
+                  var artworkImg = document.getElementById("artwork");
+                  artworkImg.setAttribute("src", artwork);
+
+                  var trackInfo = document.getElementById("track");
+                  trackInfo.innerHTML = "\
+                    <strong>"+song+"</strong><br />\
+                    "+artist+"\
+                  ";
+
+                  var artworkLink = document.getElementById("artworklink");
+                  artworkLink.setAttribute("href", link);
+
+                  if (typeof data.recenttracks.track[0]["@attr"] !== "undefined"){
+                    var listenInfo = document.getElementById("listen");
+                    listenInfo.innerHTML = 'leith is <span style="color: #d2c672;">listening</span> to:';
+                  } else {
+                    var listenInfo = document.getElementById("listen");
+                    listenInfo.innerHTML = ' leith was <span>listening</span> to:';
+                    console.log("false");
+                  }
+                } else {
+                  console.error("last.fm server error!");
+                }
+              };
+
+              request.onerror = function() {
+                console.error("connection error!");
+              };
+
+              request.send();
+            });
+        </script>
+    </div>
+
+    <div class="box" style="float: left; margin-top: 10px; width: 235px; height: 90px; border: 1px dotted gray; background: white;">
+        <center><small>site souvenirs!</small></center>
+            <center><img src="https://leizy8499.neocities.org/buttons/LEIZY8499.jpeg"> <img src="https://leizy8499.neocities.org/buttons/greenteeth.png">
+            <textarea style="height: 25px;"><a href="https://leizy8499.neocities.org/" target="_blank"><img src="https://leizy8499.neocities.org/buttons/LEIZY8499.jpeg"></a></textarea></center>
+    </div>
+</div>
+</div>
+-->        
+    </div>
+
+
+<style>
+    @font-face{
+        font-family: porkys;
+        src: url(/fonts/PORKYS_.TTF);
+    }
+    @font-face{
+        font-family: Daydream;
+        src: url(/fonts/Daydream.ttf);
+    }
+    @font-face{
+        font-family: IBM;
+        src: url(/fonts/Web437_IBM_Model3x_Alt2.woff);
+    }
+    @font-face{
+        font-family: minecraft;
+        src: url(/fonts/Minecraftia-Regular.ttf);
+    }
+    @font-face{
+        font-family: Nintendo;
+        src: url(/fonts/Nintendo-DS-BIOS.ttf);
+    }
+
+/* layout elements */
+   
+    #container{
+        max-width: 1020px;
+        margin:0 auto;
+        font-size: 15px;
+    }
+
+    
+    .content{
+       grid-area: webmaster;
+        max-width: 580px;
+        max-height: 410px;
+        display: grid;
+        grid-template-areas:
+                            'profile souvenir'
+                            'profile statuscafe'
+                            'web2 listening'
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 130px 130px 130px;
+        grid-row-gap: 10px;
+            grid-column-gap: 15px;
+        padding: 10px;
+        
+        border: 1px dotted black;
+            font-family: IBM;
+            line-height: 100%;
+            font-size: 14px;
+            background: url(https://www.transparenttextures.com/patterns/circles.png);
+            background-size:;
+    }
+
+    .profile{
+        background: white;
+            border: 1px dotted grey;
+        grid-area: profile;
+        padding: 10px;
+        line-height: 100%;
+    }
+    
+    .media{
+        text-align: center;
+        height: 90px;
+        filter: grayscale(70%);
+    }
+    .media:hover{
+        transform: scale(1.1);
+        transition-duration: 0.2s;
+        filter: grayscale(0%);
+    }
+
+    .header{
+        background: linear-gradient(to right, #c2b447, #d2c672);
+        padding: 10px;
+        border: 1px solid grey;
+            border-bottom: 0px;
+            border-top-left-radius: 15px;
+        color: black;
+    }
+    
+    .listening{
+        grid-area: listening;
+        padding: 0px; 
+        font-family: monospace; 
+        font-family: IBM;
+            line-height: 100%;
+            font-size: 14px;
+            color: black;
+        border: 1px dotted gray; 
+        background: #f0f0f0;
+    }
+    
+    .souvenir{
+        grid-area: souvenir;
+        background: #f0f0f0;
+            border: 1px dotted gray;
+            padding: 0px;
+    }
+
+    a{
+        color: black;
+        text-decoration: bold;
+        text-decoration-style:none;}
+
+        a:hover{
+            color: #b8311d;
+            text-decoration-style: dotted;
+            cursor: pointer;}
+
+    h3{font-weight: 300;
+        font-family: porkys;
+        position: relative;
+        text-align: center;
+        font-size: 36px;
+        top: -60px;
+        margin-bottom: 0px;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        letter-spacing: 1px;
+    }
+    .h3Alt{
+        position: inherit;
+        font-size: 24px;
+        margin: 0;
+        text-align: right;
+    }
+
+    ul{
+        font-size: 15px;
+        line-height: 130%;
+        margin-left: -20px;
+    }
+    li::marker{
+        color: #c2b447;
+        list-style: circle;
+    }
+
+    button{
+        font-family: IBM;
+        width: 100%;
+        height: 25px;
+        text-align: right;
+        border: 1px solid #f0f0f0;
+        background: #f0f0f0;
+        border-bottom: 1px solid tan;
+        line-height: 100%;
+    }
+
+        button:hover{
+            font-style: italic;
+            color: #b8311d;
+            background: linear-gradient(to right, #b8311d, tan, #f0f0f0, #f0f0f0);
+            width: 100%;
+            height: 25px;
+            cursor: pointer;
+            line-height: 100%;
+        }
+
+
+    .status{
+        grid-area: statuscafe;
+        border: 1px dotted gray;
+        background: white;
+        line-height: 100%;
+        background-image: url(https://web.archive.org/web/20091027122932im_/http://www.geocities.com/galaxyangel_mint/miffymove.gif);
+            background-repeat: no-repeat; background-position: bottom right;
+        padding: 20px;
+        font-size: 15px
+    }
+
+/*animations*/
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/*KOBA'S INFINITE CUSTOM MARQUEE */
+    @keyframes scroll-r2l {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-r2l {
+  animation: scroll-r2l 25s linear infinite;
+}
+    .marquee{
+        overflow: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        box-sizing: unset;
+        grid-area: marquee;
+    }
+
+    .marquee-items{
+        display: flex;
+        flex-shrink: 0;
+        height: 100%;
+        min-width: 100%;
+        position: relative;
+    }
+
+    .marquee-items > *{
+        margin-left: 5px;
+    }
+
+</style>
+        </html>

@@ -5,3 +5,14 @@
 /_site/works in progress/webCorner.html
 /styles/
 /styles/main.css
+# https://git-scm.com/docs/gitignore
+# https://help.github.com/articles/ignoring-files
+# Example .gitignore files: https://github.com/github/gitignore
+/bower_components/
+/node_modules/
+/workflows/neocities.yml/
+/styles/
+/works in progress/
+/works in progress/about.html
+/works in progress/statuscafe.html
+/works in progress/webCorner.html

@@ -6,6 +6,15 @@
 /workflows/neocities.yml/
 /styles/
 /works in progress/
+<<<<<<< HEAD
 /works in progress/about.html
 /works in progress/statuscafe.html
 /works in progress/webCorner.html
+=======
+/_site/works in progress/
+/_site/works in progress/about.html
+/_site/works in progress/statuscafe.html
+/_site/works in progress/webCorner.html
+/styles/
+/styles/main.css
+>>>>>>> live-site-GH/master

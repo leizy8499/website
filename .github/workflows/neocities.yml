@@ -4,7 +4,7 @@ name: deploy to neocities
 on:
   push:
     branches:
-      - master
+      - TRUE
 
 jobs:
   deploy:
